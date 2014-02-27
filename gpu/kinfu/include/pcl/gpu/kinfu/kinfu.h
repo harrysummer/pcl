@@ -159,7 +159,7 @@ namespace pcl
         trackFrame (const DepthMap& depth, Eigen::Affine3f* hint=NULL);
 
         void
-        integrateFrame (const DepthMap& depth, Eigen::Affine3f* pose);
+        integrateFrame (const DepthMap& depth, Eigen::Affine3f* forcedPose = nullptr);
 
         /** \brief Returns camera pose at given time, default the last pose
           * \param[in] time Index of frame for which camera pose is returned.
